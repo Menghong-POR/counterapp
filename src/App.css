@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  margin-top: 180px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 250px;
+  height: 300px;
+  margin: auto;
 }
 
 .App-logo {
@@ -28,11 +34,70 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.output {
+  height: 30%;
+  margin-top: 15%;
+  font-size: 2rem;
+  color: whitesmoke;
 }
+
+.plus-minus-btn {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 200px;
+  border-radius: 40px;
+  margin: 0 auto;
+  background-color: #282828;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  position: absolute;
+  left: 77.5px;
+  box-shadow: none;
+  background-color: #282c34;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+
+
+
+
+.reset_btn {
+  margin: 15px auto;
+}
+
+.increment {
+  border: none;
+  position: absolute;
+  left: 0px;
+  background-color:rgba(0, 0, 0, 0);
+  outline: none;
+  box-shadow: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+  z-index: 3
+}
+
+.decrement {
+  border: none;
+  position: absolute;
+  right: 0px;
+  background-color:rgba(0, 0, 0, 0);
+  outline: none;
+  box-shadow: none;
+  color: white;
+  font-size: 25px;
+  margin-right: 10px;
+  z-index: 3;
+}
+
